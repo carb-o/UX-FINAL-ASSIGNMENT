@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuttlecraft | Join Our Community</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/jovan.css">
+</head>
+<body class="bg-white text-dark">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+  <div class="container position-relative">
+    <a class="navbar-brand fw-bold fs-3 text-dark tracking-wide mb-0" href="index.html">
+      SHUTTLE<span class="text-danger">CRAFT</span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav fw-bold text-uppercase fs-6 align-items-center">
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="gear-guide.html">Gear Guide</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="improve.html">How to Improve</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="rankings-ms.html">BWF Rankings</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="about.html">About Us</a></li>
+        <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="contact.html">Contact Us</a></li>
+        <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+          <a class="nav-link nav-community-pill active fw-bold px-3" href="join.html">JOIN OUR COMMUNITY</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <main class="container py-5" style="max-width: 720px;">
+    <div class="text-center mb-4">
+      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-3">Community Portal</span>
+      <h1 class="display-5 fw-bold">JOIN OUR COMMUNITY</h1>
+      <p class="text-muted">Register your interest to connect with players, join weekly social games, and get group coaching!</p>
+    </div>
+
+    <div class="card p-4 p-md-5 border shadow-sm rounded-0 bg-white">
+      <form action="confirmation.html" method="GET">
+        <div class="mb-3">
+          <label for="fullName" class="form-label fw-semibold">Full Name</label>
+          <input type="text" class="form-control rounded-0" id="fullName" name="fullName" placeholder="e.g. Alex Tan" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-semibold">Email Address</label>
+          <input type="email" class="form-control rounded-0" id="email" name="email" placeholder="alex@example.com" required>
+        </div>
+
+        <div class="row g-3 mb-3">
+          <div class="col-md-6">
+            <label for="skillLevel" class="form-label fw-semibold">Skill Level</label>
+            <select class="form-select rounded-0" id="skillLevel" name="skillLevel" required>
+              <option value="" selected disabled>Choose level...</option>
+              <option value="Beginner">Beginner (Learning basic shots)</option>
+              <option value="Intermediate">Intermediate (Regular casual player)</option>
+              <option value="Advanced">Advanced (Competitive/Tournament)</option>
+            </select>
+          </div>
+
+          <div class="col-md-6">
+            <label for="location" class="form-label fw-semibold">Preferred Region</label>
+            <select class="form-select rounded-0" id="location" name="location" required>
+              <option value="" selected disabled>Select location...</option>
+              <option value="Central (OCBC Arena)">Central (OCBC Arena)</option>
+              <option value="East (Heartbeat@Bedok)">East (Heartbeat@Bedok)</option>
+              <option value="West (Jurong East Sports Centre)">West (Jurong East Sports Centre)</option>
+              <option value="North (Yishun Sports Hall)">North (Yishun Sports Hall)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="comments" class="form-label fw-semibold">Notes / Goals (Optional)</label>
+          <textarea class="form-control rounded-0" id="comments" name="comments" rows="3" placeholder="Tell us what skills you'd like to work on..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-danger btn-hover btn-lg rounded-0 w-100 fw-bold text-uppercase">
+          Submit Community Registration
+        </button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="py-4 border-top bg-white text-center text-muted">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Shuttlecraft Badminton | IT1X15 Assignment</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

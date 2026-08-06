@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuttlecraft | Badminton Gear & Specs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+    <div class="container position-relative">
+      <a class="navbar-brand fw-bold fs-3 text-dark tracking-wide mb-0" href="index.html">
+        SHUTTLE<span class="text-danger">CRAFT</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav fw-bold text-uppercase fs-6">
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover active text-danger px-3" href="gear-guide.html">Gear Guide</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="improve.html">How to Improve</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="rankings-ms.html">BWF Rankings</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="about.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-3" href="contact.html">Contact Us</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a class="nav-link nav-community-pill fw-bold px-3" href="join.html">JOIN OUR COMMUNITY</a>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-5 bg-white border-bottom text-center">
+    <div class="container py-3">
+      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-3">Equipment Basics & Tech</span>
+      <h1 class="display-4 fw-bold text-dark mb-3">BADMINTON GEAR GUIDE</h1>
+      <p class="lead text-muted mx-auto" style="max-width: 680px;">
+        Click on any equipment card below to open full details regarding weight classifications (3U vs 4U), racquet balances, string tension math, and footwear requirements.
+      </p>
+    </div>
+  </header>
+
+  <section class="py-5 bg-white">
+    <div class="container py-3">
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border hover-card shadow-sm rounded-0 overflow-hidden cursor-pointer" data-bs-toggle="modal" data-bs-target="#racquetModal">
+            <div class="card-img-wrapper position-relative overflow-hidden bg-light">
+              <img src="images/racquet.jpg" alt="Badminton Racquets" class="card-img-top gear-img" onerror="this.src='https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?auto=format&fit=crop&w=600&q=80'">
+              <span class="badge bg-dark position-absolute top-0 end-0 m-3">Click for Specs</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h4 class="fw-bold mb-2">Racquet Specs (3U vs 4U)</h4>
+              <p class="text-secondary small flex-grow-1">Learn how 3U and 4U weight designations and frame balance points change your smash power and swing speed.</p>
+              <button class="btn btn-outline-dark btn-hover rounded-0 w-100 mt-2 fw-semibold">Read Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border hover-card shadow-sm rounded-0 overflow-hidden cursor-pointer" data-bs-toggle="modal" data-bs-target="#stringModal">
+            <div class="card-img-wrapper position-relative overflow-hidden bg-light">
+              <img src="images/strings.jpg" alt="Strings and Tension" class="card-img-top gear-img" onerror="this.src='https://images.unsplash.com/photo-1511067007398-7e4b90cfa4bc?auto=format&fit=crop&w=600&q=80'">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3">Click for Specs</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h4 class="fw-bold mb-2">String Tension Guide</h4>
+              <p class="text-secondary small flex-grow-1">Why string tension matters: comparing low tension (20-23 lbs) sweet spots versus high tension (26-30 lbs) control.</p>
+              <button class="btn btn-outline-dark btn-hover rounded-0 w-100 mt-2 fw-semibold">Read Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border hover-card shadow-sm rounded-0 overflow-hidden cursor-pointer" data-bs-toggle="modal" data-bs-target="#shoeModal">
+            <div class="card-img-wrapper position-relative overflow-hidden bg-light">
+              <img src="images/shoes.jpg" alt="Court Shoes" class="card-img-top gear-img" onerror="this.src='https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80'">
+              <span class="badge bg-dark position-absolute top-0 end-0 m-3">Click for Specs</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h4 class="fw-bold mb-2">Non-Marking Footwear</h4>
+              <p class="text-secondary small flex-grow-1">Why court shoes require gum-rubber non-marking soles and shock cushions to protect knees during lunges.</p>
+              <button class="btn btn-outline-dark btn-hover rounded-0 w-100 mt-2 fw-semibold">Read Details</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 border hover-card shadow-sm rounded-0 overflow-hidden cursor-pointer" data-bs-toggle="modal" data-bs-target="#shuttleModal">
+            <div class="card-img-wrapper position-relative overflow-hidden bg-light">
+              <img src="images/shuttlecock.jpg" alt="Shuttlecocks" class="card-img-top gear-img" onerror="this.src='https://images.unsplash.com/photo-1613918108466-292b78a8ef95?auto=format&fit=crop&w=600&q=80'">
+              <span class="badge bg-danger position-absolute top-0 end-0 m-3">Click for Specs</span>
+            </div>
+            <div class="card-body p-4 d-flex flex-column">
+              <h4 class="fw-bold mb-2">Feather vs. Nylon</h4>
+              <p class="text-secondary small flex-grow-1">Understanding goose feather spin trajectory versus durable synthetic nylon shuttles for training.</p>
+              <button class="btn btn-outline-dark btn-hover rounded-0 w-100 mt-2 fw-semibold">Read Details</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light border-top">
+    <div class="container py-3">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold display-6">QUICK SPECS OVERVIEW</h2>
+        <p class="text-muted">Direct comparison table for fast reference.</p>
+      </div>
+
+      <div class="table-responsive border bg-white shadow-sm">
+        <table class="table table-hover align-middle mb-0 custom-table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" class="py-3 px-4">Category</th>
+              <th scope="col" class="py-3 px-4">Standard Spec</th>
+              <th scope="col" class="py-3 px-4">Key Characteristics</th>
+              <th scope="col" class="py-3 px-4">Recommended Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="fw-bold px-4">3U Weight Class</td>
+              <td class="px-4">85 - 89 grams</td>
+              <td class="px-4 text-secondary">Heavier frame delivering high inertia for powerful smashes.</td>
+              <td class="px-4"><span class="badge bg-danger">Advanced / Singles</span></td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4">4U Weight Class</td>
+              <td class="px-4">80 - 84 grams</td>
+              <td class="px-4 text-secondary">Lighter frame allowing faster wrist reaction at the net.</td>
+              <td class="px-4"><span class="badge bg-dark">Beginner & Doubles</span></td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4">Low Tension (20–23 lbs)</td>
+              <td class="px-4">Flexible string bed</td>
+              <td class="px-4 text-secondary">Larger sweet spot with trampoline effect for easy depth.</td>
+              <td class="px-4"><span class="badge bg-secondary">Beginners</span></td>
+            </tr>
+            <tr>
+              <td class="fw-bold px-4">High Tension (26–30 lbs)</td>
+              <td class="px-4">Tight string bed</td>
+              <td class="px-4 text-secondary">Smaller sweet spot requiring precise arm technique for pin-point placement.</td>
+              <td class="px-4"><span class="badge bg-danger">Advanced Players</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="racquetModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header bg-dark text-white rounded-0">
+          <h5 class="modal-header-title fw-bold mb-0">Racquet Weight & Balance Breakdown</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="fw-bold text-danger">Weight Classes (U Rating):</h6>
+          <p class="small text-muted">Racquets are measured using 'U'. The higher the number, the lighter the racquet:</p>
+          <ul class="small">
+            <li><strong>3U (85g - 89g):</strong> Standard heavy racquet for maximum smash power.</li>
+            <li><strong>4U (80g - 84g):</strong> Most popular all-around weight class for doubles speed.</li>
+            <li><strong>5U (75g - 79g):</strong> Ultra-light weight designed for minimal wrist strain.</li>
+          </ul>
+          <h6 class="fw-bold text-danger mt-3">Balance Points:</h6>
+          <p class="small text-muted mb-0"><strong>Head-Heavy:</strong> Heavy top for smashing. <br><strong>Head-Light:</strong> Light top for fast defense.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="stringModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header bg-dark text-white rounded-0">
+          <h5 class="modal-header-title fw-bold mb-0">String Tension Dynamics</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="fw-bold text-danger">Why String Tension Matters:</h6>
+          <p class="small text-muted">String tension changes how power is transferred from your swing to the shuttlecock:</p>
+          <ul class="small">
+            <li><strong>Lower Tension (20-23 lbs):</strong> Gives a wider sweet spot and trampoline repulsion. Great for beginners who need power assistance.</li>
+            <li><strong>Higher Tension (26-30 lbs):</strong> Gives maximum shuttle control and feel, but requires strong wrist technique and precise contact.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="shoeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header bg-dark text-white rounded-0">
+          <h5 class="modal-header-title fw-bold mb-0">Court Shoe Technology</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="fw-bold text-danger">Non-Marking Rubber Soles:</h6>
+          <p class="small text-muted">Standard running shoes lack lateral support and can cause ankle rolls. Specialized court shoes feature:</p>
+          <ul class="small">
+            <li><strong>Gum Rubber Sole:</strong> Sticky grip on synthetic and wooden court mats.</li>
+            <li><strong>Lateral Claw Stabilizer:</strong> Prevents shoe rollover during extreme side-steps.</li>
+            <li><strong>Power Cushioning:</strong> Absorbs heel impact when landing after overhead jump smashes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="shuttleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-0">
+        <div class="modal-header bg-dark text-white rounded-0">
+          <h5 class="modal-header-title fw-bold mb-0">Feather vs. Nylon Shuttlecocks</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body p-4">
+          <h6 class="fw-bold text-danger">Aerodynamic Differences:</h6>
+          <ul class="small">
+            <li><strong>Feather (Goose/Duck):</strong> Used in competitive play. Decelerates sharply near the end of flight, allowing tight net spinning drops.</li>
+            <li><strong>Nylon (Synthetic):</strong> Extremely durable and affordable for casual practice, but moves faster through the air without natural deceleration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="py-4 border-top bg-white text-center text-muted">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Shuttlecraft Badminton | IT1X15 Assignment</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

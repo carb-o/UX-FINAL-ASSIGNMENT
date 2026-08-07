@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shuttlecraft | Interactive Practice Calendar</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-white text-dark">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top py-3">
+    <div class="container position-relative">
+      <a class="navbar-brand fw-bold fs-3 text-dark tracking-wide mb-0" href="index.html">
+        SHUTTLE<span class="text-danger">CRAFT</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav fw-bold text-uppercase fs-6">
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-4" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover text-dark px-4" href="gear-guide.html">Gear Guide</a></li>
+          <li class="nav-item"><a class="nav-link nav-hover active text-danger px-4" href="improve.html">How to Improve</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger fw-bold text-uppercase px-3 py-2 rounded-pill mb-3">Interactive Practice Planner</span>
+      <h1 class="display-4 fw-bold">WEEKLY BADMINTON CALENDAR</h1>
+      <p class="text-muted lead">Schedule topics to specific days, click on any day to inspect what to cover, and mark tasks complete to fill your progress bar!</p>
+    </div>
+
+    <div class="card p-4 border shadow-sm rounded-0 bg-white mb-5">
+      <h4 class="fw-bold border-bottom pb-3 mb-3">1. Schedule a Practice Session</h4>
+      <div class="row g-3 align-items-end">
+        <div class="col-md-4">
+          <label for="scheduleDay" class="form-label fw-semibold">Select Day:</label>
+          <select id="scheduleDay" class="form-select rounded-0">
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+          </select>
+        </div>
+        <div class="col-md-5">
+          <label for="scheduleDrill" class="form-label fw-semibold">Select Drill / Topic:</label>
+          <select id="scheduleDrill" class="form-select rounded-0">
+            <option value="footwork">6-Point Footwork Mastery (15 mins)</option>
+            <option value="smash">Forehand Smash Technique (20 mins)</option>
+            <option value="drop">Spinning Net Drop Control (10 mins)</option>
+            <option value="grip">Grip Switching Drills (10 mins)</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <button class="btn btn-danger btn-hover rounded-0 w-100 fw-bold text-uppercase py-2" onclick="addDrillToCalendar()">
+            + Add To Calendar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="fw-bold mb-3">2. Your Weekly Schedule Overview</h4>
+    <p class="text-muted small mb-3">Click on any day card below to inspect its planned drills and video tutorials:</p>
+    
+    <div class="row g-2 mb-5" id="calendar-grid">
+      </div>
+
+    <div class="card p-4 p-md-5 border shadow-sm rounded-0 bg-white border-top border-4 border-danger mb-5" id="day-agenda-section">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center border-bottom pb-3 mb-4">
+        <div>
+          <span class="badge bg-danger text-uppercase fw-bold mb-1">Active Day Focus</span>
+          <h2 class="fw-bold mb-0" id="selected-day-title">Monday's Schedule</h2>
+        </div>
+        
+        <div class="mt-3 mt-md-0" style="min-width: 280px;">
+          <div class="d-flex justify-content-between small fw-bold mb-1">
+            <span>Day Completion Progress:</span>
+            <span id="day-progress-percent">0%</span>
+          </div>
+          <div class="progress rounded-0" style="height: 14px;">
+            <div id="day-progress-bar" class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mb-4">
+        <h5 class="fw-bold mb-3">Planned Tasks & Drills:</h5>
+        <ul class="list-group rounded-0" id="day-task-list">
+          </ul>
+      </div>
+
+      <div class="pt-3 border-top">
+        <h5 class="fw-bold mb-3">Matching Video Tutorials for Today:</h5>
+        <div class="row g-4" id="day-video-container">
+          </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="py-4 border-top bg-white text-center text-muted">
+    <div class="container">
+      <p class="mb-0 small">&copy; 2026 Shuttlecraft Badminton | IT1X15 Assignment</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
